@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bhavesh Jangale | Intern at Elevate Labs</title>
+  <title>Bhavesh Jangale | Portfolio</title>
 
   <style>
     * {
@@ -13,7 +13,7 @@
     }
 
     body {
-      font-family: 'Poppins', sans-serif;
+      font-family: "Poppins", sans-serif;
       color: #fff;
       background: radial-gradient(circle at top, #0f2027, #203a43, #2c5364);
       height: 100vh;
@@ -26,33 +26,34 @@
       position: relative;
     }
 
+    /* sparkle bg */
     #particles {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      overflow: hidden;
       z-index: 0;
+      overflow: hidden;
     }
 
     h1 {
       font-size: 3rem;
       letter-spacing: 2px;
       margin-bottom: 0.5rem;
-      background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      z-index: 2;
       animation: fadeInUp 1.2s ease forwards;
+      z-index: 2;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.7rem;
       color: #a8dadc;
       margin-bottom: 1rem;
-      z-index: 2;
       animation: fadeInUp 1.6s ease forwards;
+      z-index: 2;
     }
 
     p {
@@ -60,71 +61,49 @@
       color: #e0e0e0;
       max-width: 600px;
       line-height: 1.6;
-      z-index: 2;
       animation: fadeInUp 2s ease forwards;
+      z-index: 2;
+      margin: 0 auto;
     }
 
-    .btn {
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
       margin-top: 2rem;
-      padding: 12px 28px;
-      background: linear-gradient(90deg, #00c6ff, #0072ff);
-      color: #fff;
-      border: none;
-      border-radius: 25px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s ease-in-out;
       z-index: 2;
       animation: fadeInUp 2.3s ease forwards;
     }
 
+    .btn {
+      padding: 12px 30px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px rgba(0, 114, 255, 0.6);
+    }
+
     .btn:hover {
       transform: scale(1.08);
-      box-shadow: 0 0 15px #00c6ff;
-    }
-
-    /* follow section */
-    .follow-section {
-      margin-top: 2.5rem;
-      z-index: 2;
-      text-align: center;
-      animation: fadeInUp 2.8s ease forwards;
-    }
-
-    .follow-section h3 {
-      font-size: 1.3rem;
-      color: #a8dadc;
-      margin-bottom: 15px;
-    }
-
-    .follow-btn {
-      padding: 10px 30px;
-      background: linear-gradient(90deg, #0072ff, #00c6ff);
-      border: none;
-      border-radius: 25px;
-      color: white;
-      font-weight: 600;
-      cursor: pointer;
-      transition: 0.3s;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 5px;
-    }
-
-    .follow-btn:hover {
-      transform: scale(1.08);
-      box-shadow: 0 0 15px #00c6ff;
+      box-shadow: 0 0 20px #00c6ff;
     }
 
     .note {
-      margin-top: 10px;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       color: #ccc;
+      margin-top: 2rem;
+      animation: fadeInUp 2.8s ease forwards;
+      z-index: 2;
     }
 
     .footer {
       position: absolute;
-      bottom: 20px;
+      bottom: 15px;
       font-size: 0.9rem;
       color: #aaa;
       z-index: 2;
@@ -142,7 +121,7 @@
       }
     }
 
-    /* sparkle animation */
+    /* sparkle */
     .sparkle {
       position: absolute;
       width: 3px;
@@ -169,23 +148,29 @@
 <body>
   <div id="particles"></div>
 
-  <h1>Hello Everyone</h1>
+  <h1>Hello Everyone 👋</h1>
   <h2>I’m <strong>Bhavesh Jangale</strong></h2>
-  <p>Intern at <strong>Elevate Labs, Bangalore</strong> — passionate about Cloud, DevOps, and building smart automation solutions that make technology more efficient and scalable.</p>
+  <p>
+    Intern at <strong>Elevate Labs, Bangalore</strong> — passionate about Cloud,
+    DevOps, and building smart automation solutions that make technology more efficient and scalable.
+  </p>
 
-  <button class="btn" onclick="window.open('https://github.com/BhaveshJangale', '_blank')">View My GitHub</button>
+  <div class="btn-container">
+    <button class="btn" onclick="window.open('https://github.com/BhaveshJangale', '_blank')">
+      Follow Me on GitHub 🚀
+    </button>
+    <button class="btn" onclick="window.open('https://github.com/BhaveshJangale', '_blank')">
+      View My Profile
+    </button>
+  </div>
 
-  <!-- Clean Follow Section -->
-  <div class="follow-section">
-    <h3>Follow me on GitHub 🚀</h3>
-    <a href="https://github.com/BhaveshJangale" target="_blank" class="follow-btn">View My Profile</a>
-    <p class="note">⭐ Don’t forget to star my repositories & follow me on GitHub 😄</p>
+  <div class="note">
+    Note: Don’t forget to ⭐ my repositories & follow me on GitHub 😄
   </div>
 
   <div class="footer">© 2025 Bhavesh Jangale | Elevate Labs Internship</div>
 
   <script>
-    // sparkle generator
     const particles = document.getElementById("particles");
     const total = 50;
     for (let i = 0; i < total; i++) {
