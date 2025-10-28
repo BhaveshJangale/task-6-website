@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+k<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -26,7 +26,6 @@
       position: relative;
     }
 
-    /* particle background */
     #particles {
       position: absolute;
       width: 100%;
@@ -93,6 +92,39 @@
       animation: fadeInUp 3s ease forwards;
     }
 
+    /* new follow section */
+    .follow-section {
+      position: absolute;
+      bottom: 70px;
+      z-index: 2;
+      text-align: center;
+      animation: fadeInUp 2.8s ease forwards;
+    }
+
+    .follow-section h3 {
+      font-size: 1.2rem;
+      color: #a8dadc;
+      margin-bottom: 10px;
+    }
+
+    .follow-btn {
+      padding: 10px 25px;
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      border: none;
+      border-radius: 25px;
+      color: white;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .follow-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 12px #00c6ff;
+    }
+
     @keyframes fadeInUp {
       from {
         transform: translateY(40px);
@@ -104,7 +136,6 @@
       }
     }
 
-    /* sparkle animation */
     .sparkle {
       position: absolute;
       width: 3px;
@@ -136,6 +167,13 @@
   <p>Intern at <strong>Elevate Labs, Bangalore</strong> — passionate about Cloud, DevOps, and building smart automation solutions that make technology more efficient and scalable.</p>
   <button class="btn" onclick="window.open('https://github.com/BhaveshJangale', '_blank')">View My GitHub</button>
 
+  <!-- 🔥 New Follow Section -->
+  <div class="follow-section">
+    <h3>Follow me on GitHub 🚀</h3>
+    <a href="https://github.com/BhaveshJangale" target="_blank" class="follow-btn">View My Profile</a>
+    <p style="margin-top: 8px; font-size: 0.9rem; color: #ccc;">Note: Don’t forget to ⭐ star my repositories & follow me on GitHub 😄</p>
+  </div>
+
   <div class="footer">© 2025 Bhavesh Jangale | Elevate Labs Internship</div>
 
   <script>
@@ -154,3 +192,4 @@
   </script>
 </body>
 </html>
+
