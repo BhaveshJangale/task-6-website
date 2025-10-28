@@ -1,4 +1,4 @@
-k<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -83,32 +83,22 @@ k<!DOCTYPE html>
       box-shadow: 0 0 15px #00c6ff;
     }
 
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      font-size: 0.9rem;
-      color: #aaa;
-      z-index: 2;
-      animation: fadeInUp 3s ease forwards;
-    }
-
-    /* new follow section */
+    /* follow section */
     .follow-section {
-      position: absolute;
-      bottom: 70px;
+      margin-top: 2.5rem;
       z-index: 2;
       text-align: center;
       animation: fadeInUp 2.8s ease forwards;
     }
 
     .follow-section h3 {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       color: #a8dadc;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     .follow-btn {
-      padding: 10px 25px;
+      padding: 10px 30px;
       background: linear-gradient(90deg, #0072ff, #00c6ff);
       border: none;
       border-radius: 25px;
@@ -118,11 +108,27 @@ k<!DOCTYPE html>
       transition: 0.3s;
       text-decoration: none;
       display: inline-block;
+      margin-top: 5px;
     }
 
     .follow-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 0 12px #00c6ff;
+      transform: scale(1.08);
+      box-shadow: 0 0 15px #00c6ff;
+    }
+
+    .note {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.9rem;
+      color: #aaa;
+      z-index: 2;
+      animation: fadeInUp 3s ease forwards;
     }
 
     @keyframes fadeInUp {
@@ -136,6 +142,7 @@ k<!DOCTYPE html>
       }
     }
 
+    /* sparkle animation */
     .sparkle {
       position: absolute;
       width: 3px;
@@ -165,13 +172,14 @@ k<!DOCTYPE html>
   <h1>Hello Everyone</h1>
   <h2>I’m <strong>Bhavesh Jangale</strong></h2>
   <p>Intern at <strong>Elevate Labs, Bangalore</strong> — passionate about Cloud, DevOps, and building smart automation solutions that make technology more efficient and scalable.</p>
+
   <button class="btn" onclick="window.open('https://github.com/BhaveshJangale', '_blank')">View My GitHub</button>
 
-  <!-- 🔥 New Follow Section -->
+  <!-- Clean Follow Section -->
   <div class="follow-section">
     <h3>Follow me on GitHub 🚀</h3>
     <a href="https://github.com/BhaveshJangale" target="_blank" class="follow-btn">View My Profile</a>
-    <p style="margin-top: 8px; font-size: 0.9rem; color: #ccc;">Note: Don’t forget to ⭐ star my repositories & follow me on GitHub 😄</p>
+    <p class="note">⭐ Don’t forget to star my repositories & follow me on GitHub 😄</p>
   </div>
 
   <div class="footer">© 2025 Bhavesh Jangale | Elevate Labs Internship</div>
@@ -192,4 +200,3 @@ k<!DOCTYPE html>
   </script>
 </body>
 </html>
-
